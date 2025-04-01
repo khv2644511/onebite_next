@@ -10,7 +10,7 @@ export default function SearchableLayout({ children }: { children: ReactNode }) 
 
   useEffect(() => {
     setSearch(q || '');
-  }, []);
+  }, [q]);
 
   const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
